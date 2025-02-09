@@ -29,15 +29,20 @@ Make sure you have **Node.js** and **npm** installed on your system. You can dow
    git clone https://github.com/your-username/tic-tac-toe-game.git
    ```
 2. Navigate to the project directory:
-   cd tic-tac-toe-game
+   ```sh
+    cd tic-tac-toe-game
+   ```
 3. Install dependencies:
-   npm install
+   ```sh
+    npm install
+   ```
 
 ### Running the Project
 
 1. To start the development server, run:
-   npm run dev
-
+   ```sh
+     npm run dev
+   ```
 ### How to Play
 
 The game starts with Player X going first.
