@@ -5,7 +5,7 @@ import logo from "./assets/logo.svg";
 function App() {
   return (
     <div className="w-screen min-h-screen items-center justify-center flex flex-col pt-8 bg-[#5A1E76] ">
-      <div className="sm:absolute bottom-0 left-0 mb-2">
+      <div className="sm:absolute bottom-0 left-0 mb-2 sm:mb-0">
         <img
           src={logo}
           alt="Logo"
