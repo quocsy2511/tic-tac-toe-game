@@ -1,51 +1,53 @@
-# React + TypeScript + Vite
+# Tic Tac Toe Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Tic Tac Toe game built with **React**, **TypeScript**, and **Vite**. The game allows two players to take turns placing their marks (X or O) on a 3x3 grid. The game keeps track of the score, detects a winner, and handles draw cases.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Real-time turn-based gameplay**
+- **Winner detection & scoring system**
+- **Draw handling**
+- **Responsive design with Tailwind CSS**
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Prerequisites
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Make sure you have **Node.js** and **npm** installed on your system. You can download them from [nodejs.org](https://nodejs.org/).
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Installation
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# tic-tac-toe-game
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/your-username/tic-tac-toe-game.git
+   ```
+2. Navigate to the project directory:
+   cd tic-tac-toe-game
+3. Install dependencies:
+   npm install
+
+### Running the Project
+
+1. To start the development server, run:
+   npm run dev
+
+### How to Play
+
+The game starts with Player X going first.
+
+Click on an empty square to place your mark (X or O).
+
+The game will check for a winner after each move.
+
+If a player wins, their score will increase.
+
+If all squares are filled and no one wins, the game ends in a draw.
+
+Click the Restart button to start a new round.
